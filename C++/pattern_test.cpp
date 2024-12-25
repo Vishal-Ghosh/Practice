@@ -7,18 +7,19 @@ int main()
     int n;
     cin >> n;
     int row = 1;
+    int value = 1;
+    // char ch = 'A';
 
     while (row <= n)
     {
         int column = 1;
-        // char value = 'A';
-        //  int value = row;
-        while (column <= n)
+
+        while (column <= row)
         {
-            char ch = 'A' + row + column - 2;
-            cout << ch << " ";
+            // char ch = 'A';
+            cout << value << " ";
             column += 1;
-            ch += 1;
+            value += 1;
         }
 
         cout << endl;
